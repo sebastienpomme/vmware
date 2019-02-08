@@ -1,7 +1,7 @@
-################ 		PowerCLI script to remove a snapshot			################ 
-################		Developped by Sebastien Pomme				################ 
-################		Find more on my GitHub					################ 
-################		https://github.com/sebastienpomme/vmware		################ 
+################ 		PowerCLI script to remove a snapshot on Powered off vm			################ 
+################		Developped by Sebastien Pomme						################ 
+################		Find more on my GitHub							################ 
+################		https://github.com/sebastienpomme/vmware				################ 
 
 # How to use the command:
 # .\RemoveSnapshot.ps1 -snapname name_of_snapshot -cluster clustername -logpath C:\CreateSnapshotlog.txt

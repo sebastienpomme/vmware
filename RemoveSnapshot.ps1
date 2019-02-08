@@ -1,12 +1,12 @@
-################ 		PowerCLI script to connect on Vcenter		################ 
+################ 		PowerCLI script to remove a snapshot			################ 
 ################		Developped by Sebastien Pomme				################ 
-################		Find more on my GitHub						################ 
-################		https://github.com/sebastienpomme/vmware	################ 
+################		Find more on my GitHub					################ 
+################		https://github.com/sebastienpomme/vmware		################ 
 
 # How to use the command:
-# .\CommitDelete_Snapshot.ps1 -snapname name_of_snapshot -cluster clustername -logpath C:\CreateSnapshotlog.txt
+# .\RemoveSnapshot.ps1 -snapname name_of_snapshot -cluster clustername -logpath C:\CreateSnapshotlog.txt
 # logpath is not mandatory
-# For the clustername, it's possible to parse a * to target all cluster on the datacenter : .\CreateSnapshot.ps1 -snapname name_of_snapshot -cluster *
+# For the clustername, it's possible to parse a * to target all cluster on the datacenter : .\RemoveSnapshot.ps1 -snapname name_of_snapshot -cluster *
 
 ################			Script			################
 

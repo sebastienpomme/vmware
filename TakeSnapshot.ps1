@@ -1,12 +1,12 @@
-################ 		PowerCLI script to connect on Vcenter		################ 
-################		Developped by Sebastien Pomme				################ 
-################		Find more on my GitHub						################ 
-################		https://github.com/sebastienpomme/vmware	################ 
+################ 		PowerCLI script to take a snapshot for all powered off vm		################ 
+################		Developped by Sebastien Pomme						################ 
+################		Find more on my GitHub							################ 
+################		https://github.com/sebastienpomme/vmware				################ 
 
 # How to use the command:
-# .\CreateSnapshot.ps1 -snapname name_of_snapshot -cluster clustername -logpath C:\CreateSnapshotlog.txt
+# .\TakeSnapshot.ps1 -snapname name_of_snapshot -cluster clustername -logpath C:\CreateSnapshotlog.txt
 # logpath is not mandatory
-# For the clustername, it's possible to parse a * to target all cluster on the datacenter : .\CreateSnapshot.ps1 -snapname name_of_snapshot -cluster *
+# For the clustername, it's possible to parse a * to target all cluster on the datacenter : .\TakeSnapshot.ps1 -snapname name_of_snapshot -cluster *
 
 ################			Script			################
 

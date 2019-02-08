@@ -31,3 +31,7 @@ $vm | foreach {
 
 }
 Stop-Transcript
+
+################			End Script			################
+
+# Find more information about PowerCLI Commandlet on : https://code.vmware.com/tool/vmware-powercli/6.5

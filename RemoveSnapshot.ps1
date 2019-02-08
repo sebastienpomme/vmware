@@ -11,7 +11,7 @@
 ################			Script			################
 
 param(
-    [parameter(Mandatory=$true)] $snapname,
+	[parameter(Mandatory=$true)] $snapname,
 	[parameter(Mandatory=$true)] $cluster,
 	[parameter(Mandatory=$false)] $logpath
 )

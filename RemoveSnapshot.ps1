@@ -19,7 +19,7 @@ param(
 
 Start-Transcript -path $logpath -append
 
-$vm = Get-VM -Name * -Location $cluster
+$vm = Get-VM -Name $vmname -Location $cluster
 
 $vm | foreach {
 

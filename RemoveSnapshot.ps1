@@ -11,6 +11,7 @@
 ################			Script			################
 
 param(
+	[parameter(Mandatory=$true)] $vmname,
 	[parameter(Mandatory=$true)] $snapname,
 	[parameter(Mandatory=$true)] $cluster,
 	[parameter(Mandatory=$false)] $logpath
@@ -22,15 +23,10 @@ $vm = Get-VM -Name * -Location $cluster
 
 $vm | foreach {
 
-    if ($_.PowerState -eq "PoweredOff") {
         "Commiting/Deleting Snapshot named $snapname for the virtual machine $($_.name) on Esxi $($_.VMHost)"
-		$snap = Get-Snapshot -VM $_ -Name $snapname
-		Remove-Snapshot -Snapshot $snap -RemoveChildren -Confirm:$false
-    }
-    else {
-        "$($_.name) is PoweredOn so No Snapshot Commited/Deleted"
-        sleep 0
-    }
+	$snap = Get-Snapshot -VM $_ -Name $snapname
+	Remove-Snapshot -Snapshot $snap -RemoveChildren -Confirm:$false
+
 }
 Stop-Transcript
 

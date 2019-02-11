@@ -8,8 +8,6 @@
 
 ################			Script			################
 
-Import-Module VMware.VimAutomation.Core
-
 param(
     [parameter(Mandatory=$true)] $vcserver,
     [parameter(Mandatory=$true)] $user,
